@@ -19,7 +19,11 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 const app = express();
 
 // ===================== MIDDLEWARES =====================
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://job-portal-system-app.netlify.app/",
+  }),
+);
 app.use(express.json());
 
 // ===================== DATABASE =====================
