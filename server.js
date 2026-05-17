@@ -22,6 +22,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://job-portal-system-app.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
 );
