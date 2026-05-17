@@ -21,7 +21,8 @@ const app = express();
 // ===================== MIDDLEWARES =====================
 app.use(
   cors({
-    origin: "https://job-portal-system-app.netlify.app/",
+    origin: "https://job-portal-system-app.netlify.app",
+    credentials: true,
   }),
 );
 app.use(express.json());
