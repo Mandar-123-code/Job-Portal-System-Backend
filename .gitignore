@@ -26,3 +26,7 @@ dist-ssr
 
 node_modules/
 .env
+.env.example
+e2eTest.js
+testLogin.js
+testSignup.js
